@@ -39,7 +39,7 @@ OBS:* Nada contra ao Android Studio, acredito que ele seja uma ótima ferramenta
 
 **Vamos lá!**
 
-## 1º Passo - Ambiente Android<a name="p1"></a>
+## 1º Passo - Ambiente Android
 
 Baixe o pacote com o SDK e o OpenJDK [Google Drive](https://drive.google.com/file/d/1Ew_TVBn1IX_yGgszbx3j2hjGVQjg6oDs/view)
 
@@ -52,7 +52,7 @@ F:\Android\sdk
 
 Extraia o pacote nas suas respectivas pastas.
 
-## 2º Passo - Flutter<a name="p2"></a>
+## 2º Passo - Flutter
 
 Instale o flutter de acordo com o seu sistema operacional [Flutter](https://flutter.dev/docs/get-started/install)
 
@@ -63,7 +63,7 @@ Criei a pasta ``Flutter`` e extraia os arquivos baixados nesta pasta.
 F:\Flutter
 ```
 
-## 3º Passo - Variáveis de Ambiente<a name="p3"></a>
+## 3º Passo - Variáveis de Ambiente
 
 Defina as variáveis de ambiente e o path do windows apontando para a pasta do Flutter e do Android
 
@@ -79,7 +79,7 @@ Eu defini todas as minhas variáveis na parte de baixo, ou seja, são Variáveis
 
 Clique em "novo" e defina:
 
-#### Android<a name="p31"></a>
+#### Android
 
 ```
 ANDROID_HOME=F:\Android\
@@ -88,7 +88,7 @@ ANDROID_SDK_ROOT=F:\Android\sdk
 
 ![](/assets/img/variaveis_ambiente1.png "Criar variável de ambiente ANDROID_HOME")
 
-### Path<a name="p32"></a>
+### Path
 
 Só clicar em Novo e adicionar as linhas separadamente
 
@@ -102,7 +102,7 @@ F:\Android\sdk\emulator
 ls
 ![](/assets/img/variaveis_ambiente2.png "Adicionar novas variáveis")
 
-## 4º Passo - Android SDK<a name="p4"></a>
+## 4º Passo - Android SDK
 
 Baixe o que falta do SDK (system images, platform tools, build tools, platforms e o emulator) através dos comandos abaixo:
 
@@ -121,7 +121,7 @@ Caso queira a lista das versões disponíveis utilize:
 sdkmanager --list
 ```
 
-### 5º Passo - Licenças Android<a name="p5"></a>
+### 5º Passo - Licenças Android
 
 Aceite as lincenças do Android
 
@@ -131,7 +131,7 @@ sdkmanager --licenses
 
 digite ``y`` e aperte ``enter`` para cada licença
 
-## 6º Passo - Configurar SDK no Flutter<a name="p6"></a>
+## 6º Passo - Configurar SDK no Flutter
 
 Faça com que o Flutter enxergue o Android SDK
 
@@ -139,7 +139,7 @@ Faça com que o Flutter enxergue o Android SDK
 flutter config — -android-sdk F:\Android\
 ```
 
-## 7º Passo - Emulador<a name="p7"></a>
+## 7º Passo - Emulador
 
 Crie o emulador com o nome que deseja, basta substituir o ``nexus``
 
@@ -187,7 +187,7 @@ avdmanager delete avd -n PixelXl
 ```
 
 
-## 8º Passo - VSCode<a name="p8"></a>
+## 8º Passo - VSCode
 
 Instale a extensão do Flutter no seu VSC
 
@@ -195,7 +195,7 @@ Instale a extensão do Flutter no seu VSC
 
 ![](/assets/img/vsc_flutter.png "Instalar extensão FLutter VSC")
 
-## 9º Passo - Hora da Verdade<a name="p9"></a>
+## 9º Passo - Hora da Verdade
 
 Rode o ``doctor`` e veja se está tudo correto
 
@@ -213,12 +213,12 @@ flutter doctor -v
 
 
 
-## Resultado<a name="resultado"></a>
+## Resultado
 
 ![](/assets/img/resultado.png "Emulador")
 
 
-## Fim<a name="fim"></a>
+## Fim
 
 Ficou um pouco extenso, mas é exatamente com estes passos que consegui instalar e emular de maneira mais promissora após muito tempo tentando e sempre ter algum problema. Agora está tudo certo!<br> Não sou nenhum expert e nem sou um desenvolvedor mobile, mas espero que tenha ajudado de alguma forma.
 
