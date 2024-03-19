@@ -1,8 +1,8 @@
 ---
 title: Ambiente Mobile sem Android Studio
 date: 2024-03-11 18:50:00 -300
-categories: [Code, Mobile]
-tags: [flutter, android-studio]
+categories: [Code, Mobile, flutter]
+tags: [code]
 lang: pt-br
 ---
 
