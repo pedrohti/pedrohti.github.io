@@ -21,7 +21,7 @@ OBS:* Nada contra ao Android Studio, acredito que ele seja uma ótima ferramenta
 
 **Índice**
 
-1. [Ambiente Android](#p1)
+<!-- 1. [Ambiente Android](#p1)
 2. [Flutter](#p2)
 3. [Variáveis de Ambiente](#p3)
    1. [Android](#p31)
@@ -33,7 +33,7 @@ OBS:* Nada contra ao Android Studio, acredito que ele seja uma ótima ferramenta
 8. [VSCode](#p8)
 9.  [Hora da Verdade](#p9)
 10. [Resultado](#resultado)
-11. [Fim](#fim)
+11. [Fim](#fim) -->
 
 &nbsp;
 
