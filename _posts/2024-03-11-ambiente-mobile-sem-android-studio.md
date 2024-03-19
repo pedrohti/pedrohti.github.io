@@ -15,29 +15,9 @@ Mas logo de cara me deparei com um sério problema: preparar o ambiente **SEM** 
 
 E pensando nisso criei esse post com os passos que segui para conseguir fazer funcionar o ambiente mobile sem o Android Studio e receber os checks✔️ do flutter doctor.
 
-OBS:* Nada contra ao Android Studio, acredito que ele seja uma ótima ferramenta, mas prefiro algo mais leve e "moldável", digamos.
+**OBS**: Nada contra ao Android Studio, acredito que ele seja uma ótima ferramenta, mas prefiro algo mais leve e "moldável", digamos.
 
 &nbsp;
-
-**Índice**
-
-<!-- 1. [Ambiente Android](#p1)
-2. [Flutter](#p2)
-3. [Variáveis de Ambiente](#p3)
-   1. [Android](#p31)
-   2. [Path](#p32)
-4. [Android SDK](#p4)
-5. [Licenças do Android](#p5)
-6. [Configurar SDK no Flutter](#p6)
-7. [Emulador](#p7)
-8. [VSCode](#p8)
-9.  [Hora da Verdade](#p9)
-10. [Resultado](#resultado)
-11. [Fim](#fim) -->
-
-&nbsp;
-
-**Vamos lá!**
 
 ## 1º Passo - Ambiente Android
 
@@ -52,7 +32,7 @@ F:\Android\sdk
 
 Extraia o pacote nas suas respectivas pastas.
 
-## 2º Passo - Flutter
+## 2º Passo - Flutter<a name="p2"></a>
 
 Instale o flutter de acordo com o seu sistema operacional [Flutter](https://flutter.dev/docs/get-started/install)
 
@@ -63,7 +43,7 @@ Criei a pasta ``Flutter`` e extraia os arquivos baixados nesta pasta.
 F:\Flutter
 ```
 
-## 3º Passo - Variáveis de Ambiente
+## 3º Passo - Variáveis de Ambiente<a name="p3"></a>
 
 Defina as variáveis de ambiente e o path do windows apontando para a pasta do Flutter e do Android
 
@@ -79,7 +59,7 @@ Eu defini todas as minhas variáveis na parte de baixo, ou seja, são Variáveis
 
 Clique em "novo" e defina:
 
-#### Android
+#### Android<a name="p31"></a>
 
 ```
 ANDROID_HOME=F:\Android\
@@ -88,7 +68,7 @@ ANDROID_SDK_ROOT=F:\Android\sdk
 
 ![](/assets/img/variaveis_ambiente1.png "Criar variável de ambiente ANDROID_HOME")
 
-### Path
+### Path<a name="p32"></a>
 
 Só clicar em Novo e adicionar as linhas separadamente
 
@@ -102,7 +82,7 @@ F:\Android\sdk\emulator
 ls
 ![](/assets/img/variaveis_ambiente2.png "Adicionar novas variáveis")
 
-## 4º Passo - Android SDK
+## 4º Passo - Android SDK<a name="p4"></a>
 
 Baixe o que falta do SDK (system images, platform tools, build tools, platforms e o emulator) através dos comandos abaixo:
 
@@ -121,7 +101,7 @@ Caso queira a lista das versões disponíveis utilize:
 sdkmanager --list
 ```
 
-### 5º Passo - Licenças Android
+### 5º Passo - Licenças Android<a name="p5"></a>
 
 Aceite as lincenças do Android
 
@@ -131,7 +111,7 @@ sdkmanager --licenses
 
 digite ``y`` e aperte ``enter`` para cada licença
 
-## 6º Passo - Configurar SDK no Flutter
+## 6º Passo - Configurar SDK no Flutter<a name="p6"></a>
 
 Faça com que o Flutter enxergue o Android SDK
 
@@ -139,7 +119,7 @@ Faça com que o Flutter enxergue o Android SDK
 flutter config — -android-sdk F:\Android\
 ```
 
-## 7º Passo - Emulador
+## 7º Passo - Emulador<a name="p7"></a>
 
 Crie o emulador com o nome que deseja, basta substituir o ``nexus``
 
@@ -187,7 +167,7 @@ avdmanager delete avd -n PixelXl
 ```
 
 
-## 8º Passo - VSCode
+## 8º Passo - VSCode<a name="p8"></a>
 
 Instale a extensão do Flutter no seu VSC
 
@@ -195,7 +175,7 @@ Instale a extensão do Flutter no seu VSC
 
 ![](/assets/img/vsc_flutter.png "Instalar extensão FLutter VSC")
 
-## 9º Passo - Hora da Verdade
+## 9º Passo - Hora da Verdade<a name="p9"></a>
 
 Rode o ``doctor`` e veja se está tudo correto
 
@@ -213,12 +193,12 @@ flutter doctor -v
 
 
 
-## Resultado
+## Resultado<a name="resultado"></a>
 
 ![](/assets/img/resultado.png "Emulador")
 
 
-## Fim
+## Fim<a name="fim"></a>
 
 Ficou um pouco extenso, mas é exatamente com estes passos que consegui instalar e emular de maneira mais promissora após muito tempo tentando e sempre ter algum problema. Agora está tudo certo!<br> Não sou nenhum expert e nem sou um desenvolvedor mobile, mas espero que tenha ajudado de alguma forma.
 
